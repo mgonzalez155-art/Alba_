@@ -1,1 +1,7 @@
-# Alba_
+# Página web Alba Studio_
+
+# Página web - NOMBRE DE SU NEGOCIO, ETC...
+
+
+Este proyecto es desarrollado para el estudio de barre Alba Studio. Con el fin de promover el bienestar físico y mental.
+Todo el contenido pertenece a Odalyss Mayte González Viguería, en caso de utlizarlo se debe citar al autor.
