@@ -22,7 +22,7 @@
 <Header class="header-techIY"></header>
   <div class="container header-inicio">
     <a href="#inicio" class="logo.png">
-      <img src="img/logo.png" alt="Alba Studio">
+      <img src="img/logoalba.png" alt="Alba Studio">
 
     </a>
 
@@ -46,43 +46,116 @@
 </header>
 
 
-    
-<main>
+
 
   <!--=================CONTENIDO PRINCIPAL===========================-->
-
 
 </main>
 
  <!--=================SECCIÓN DEL HERO===========================-->
- <section id="inicio" class="hero">
-      <div class="container hero-inicio">
-        <div class="hero-text">
-          <p class="eyebrow">Cada decisión</p>
-          <h1>Alba Studio</h1>
-          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
-
-
-          <div class="hero-actions">
-            <a href="#productos" class="btn primary">Ver productos</a>
-            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
-          </div>
-
-
-          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
-        </div>
-
-
-        <div class="hero-imagen">
-          <img src="XXX" alt="XXXXX">
-          <span class="tag tag-love">Hecho con cariño</span>
-          <span class="tag tag-custom">Pedidos personalizados</span>
-        </div>
-      </div>
+ <section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDA A ALBA STUDIO</p>
+      <h1 class="intro-title" id="intro-title">TU ESPACIO.<br><span>TU MOMENTO.</span></h1>
+      <p class="intro-description">Clases de pilates y barre en un ambiente tranquilo, amigable y sin juicios, con atención personal para cada mujer.</p>
     </section>
 
 
+
+
+ <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="img/hero.mp4"
+          aria-label="Video de presentación">
+          <source src="img/hero.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> PRESENTACIÓN</p>
+          <h2 class="media-card__title">MUÉVETE<br>A TU RITMO</h2>
+          <a class="media-card__link" href="#contacto">Descubrir <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/barre1.jpg"
+          alt="Clases de Barre en Alba Studio"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">EL ESTUDIO</p>
+          <h2 class="media-card__title">UN ESPACIO<br>SOLO PARA TI</h2>
+          <a class="media-card__link" href="#contacto">Conocer más <span aria-hidden="true">↗</span></a>
+        </div>
+    
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/barre2.jpg"
+          alt="Fotografía que representa mis proyectos"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">CLASES</p>
+          <h2 class="media-card__title">PILATES<br>+ BARRE</h2>
+          <a class="media-card__link" href="#contacto">Ver clases <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section>
+
 </main>
+
+<!-- footer o PIE DE PÁGINA -->
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> Alba Studio. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
 
 </body>
 </html>
