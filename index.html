@@ -36,7 +36,7 @@
     </ul>
 
   <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero saber acerca de las clases de Barre.')">
-          <i data-lucide="message-circle"></i> Pedir ahora
+          <i data-lucide="message-circle"></i> Enviar mensaje
         </button>
 
             </nav>
@@ -50,7 +50,7 @@
 
   <!--=================CONTENIDO PRINCIPAL===========================-->
 
-</main>
+<main>
 
  <!--=================SECCIÓN DEL HERO===========================-->
  <section class="intro" aria-labelledby="intro-title">
@@ -145,8 +145,64 @@
         </div>
       </article>
 
+    </section> <!--FIN DE HERO-->
 
-    </section>
+    <!-- SECCIÓN PRODUCTOS,SERVICIOS -->
+
+      <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pilates + Barre</p>
+          <h2>Conoce nuestros servicios</h2>
+          <p class="lead">Clases pequeñas en un espacio tranquilo, donde cada mujer se siente acompañada .</p>
+        </div>
+
+        <!-- SERVICIO 1- TARJETA-->
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="img/barre6.jpg" alt="Mujer haciendo pilates en un estudio luminoso">
+            <div class="product-body">
+              <span class="tag">Favorito</span>
+              <h3>Pilates Mat</h3>
+              <p class="price">$449 MXN</p>
+              <p class="description">Fortalece tu cuerpo y encuentra calma en cada movimiento.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver más<samp></samp></button>
+            </div>
+          </article>
+
+          <!-- SERVICIO 2- TARJETA-->
+
+
+          <article class="product-card reveal">
+            <img src="img/barre7.jpg" alt="Mujeres haciendo barre con la barra de ballet">
+            <div class="product-body">
+              <span class="tag">Favorito</span>
+              <h3>Barre</h3>
+              <p class="price">$349 MXN</p>
+              <p class="description">Tonifica y define con movimientos suaves y precisos.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver más<samp></samp></button>
+            </div>
+          </article>
+
+          <!-- SERVICIO 3- TARJETA-->
+
+        
+          <article class="product-card reveal">
+            <img src="img/barre3.jpg" alt="Instructora corrigiendo la postura de una alumna en una clase pequeña">
+            <div class="product-body">
+              <span class="tag">Favorito</span>
+              <h3>Clases Personalizadas</h3>
+              <p class="price">$599 MXN</p>
+              <p class="description">Atención personal para que cada mujer avance a su ritmo.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver más<samp></samp></button>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section> 
 
 </main>
 
