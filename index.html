@@ -170,7 +170,7 @@
               <h3>Pilates Mat</h3>
               <p class="price">$449 MXN</p>
               <p class="description">Fortalece tu cuerpo y encuentra calma en cada movimiento.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver más<samp></samp></button>
+              <button type="button" class="btn card" onclick="openModal('modal-pilates-mat')">Ver más<samp></samp></button>
             </div>
           </article>
 
@@ -184,7 +184,7 @@
               <h3>Barre</h3>
               <p class="price">$349 MXN</p>
               <p class="description">Tonifica y define con movimientos suaves y precisos.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver más<samp></samp></button>
+              <button type="button" class="btn card" onclick="openModal('modal-barre')">Ver más<samp></samp></button>
             </div>
           </article>
 
@@ -371,6 +371,7 @@
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/odagizz__?fqnt=MXVtZGpzMmJtNjNzbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">@AlbaStudio</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://www.facebook.com/share/1MP4eDrfke/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Alba Studio</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:AlbaStudio@gmail.com">AlbaStudio@gmail.com</a></li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/H8nQvuQYxCSuJXoj8">Plaza Satélite</a></li>
             <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 19:00</li>
           </ul>
         </aside>
@@ -385,6 +386,51 @@
     <p>© <span id="current-year"></span> Alba Studio. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+
+<!-- MODAL PARA LOS PRODUCTOS O SERVICIOS, ETC... -->
+<div id="modal-pilates-mat" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-pilates-mat-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/barre1.1.jpg" alt="Mujeres haciendo pilates mat en un estudio luminoso.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-pilates-mat')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-pilates-mat-title">Pilates Mat</h2>
+        <p class="price">$449 MXN</p>
+        <p>Una clase en tapete para fortalecer tu cuerpo, mejorar tu postura y desconectarte del estrés, en un espacio tranquilo y sin juicios.</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Clase de 50 minutos</li>
+          <li>Grupo pequeño</li>
+          <li>Atención personal de la instructor</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero reservar una clase de Pilates Mat en Alba Studio.')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA LA TARJETA 2. -->
+  <div id="modal-barre" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-barre-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/barre2.2.jpg" alt="Mujeres haciendo barre con la barra de ballet.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-barre-titlee">Barre</h2>
+        <p class="price">$349 MXN</p>
+        <p>Una clase que mezcla ballet, pilates y fuerza para tonificar y definir tu cuerpo con movimientos suaves y precisos.</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Clase de 50 minutos</li>
+          <li>Uso de barra y mancuernas ligeras</li>
+          <li>Corrección de técnican</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero reservar una clase de Barre en Alba Studio')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 
